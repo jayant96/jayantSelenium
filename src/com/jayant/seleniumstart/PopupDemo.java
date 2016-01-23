@@ -17,7 +17,7 @@ public class PopupDemo {
         driver.get("http://jsbin.com/usidix/1");
         driver.findElement(By.cssSelector("input[value=\"Go!\"]")).click();
         String alertMessage = driver.switchTo().alert().getText();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.switchTo().alert().accept();
         System.out.println("alertMessage = " + alertMessage);
         driver.close();
